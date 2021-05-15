@@ -50,10 +50,12 @@ public void actionPerformed(ActionEvent e) {
 		list.add(add);
 		}
 	if (e.getSource()== two) {
+		String guests = "";
 	for(int i=0;i<list.size();i++) {
 			String s = list.get(i);
-		JOptionPane.showMessageDialog(null, "Guest #" + i + ": " + s);
+		guests += "Guest #" + (i+1) + ": " + s + "\n";
 		} 
+	JOptionPane.showMessageDialog(null, guests);
 	}
 }
 }
